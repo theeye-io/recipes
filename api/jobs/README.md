@@ -1,6 +1,6 @@
-fetch and cancel theeye api jobs
+Fetch and cancel theeye api jobs
 
-https://docs.theeye.io
+https://documentation.theeye.io/api/jobs
 
 sample usage in recipes
 
