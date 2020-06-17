@@ -1,0 +1,21 @@
+version: '2'
+# Maintainer: facugon
+
+services:
+  theeye-db:
+    image: mongo:4.2.6
+    ports:
+      - "27017:27017"
+    container_name: mongodb
+    volumes:
+      - /srv/docker/mongodb:/data/db
+    networks:
+      - theeye
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=user
+      - MONGO_INITDB_ROOT_PASSWORD=password
+
+networks:
+  theeye:
+    external:
+      name: theeye
