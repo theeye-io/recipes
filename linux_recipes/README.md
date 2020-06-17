@@ -1,4 +1,5 @@
-This recipes requires from you to fullfill credentials after importing it. Please edit this tasks and fullfill all requered variables.
+This recipes requires from you to fulfill credentials after importing it.
+Import > Edit the tasks to complete all requered variables.
 
 | Name | Description |
 | ----- | ----- |
