@@ -10,3 +10,4 @@ Import > Edit the tasks to complete all requered variables.
 | chequeaCambiosEnUrls.sh |  type:monitor, check if a list of urls changed and Notifies them. | |
 | start_daemon_mode.sh | sample script to use in tasks. starts a process and let it running in backgroud | [download](https://raw.githubusercontent.com/theeye-io/recipes/master/linux_recipes/start_daemon_mode.sh) |
 | docker_agent_launch.json | self provisioning agents using docker | [download](https://raw.githubusercontent.com/theeye-io/recipes/master/linux_recipes/docker_agent_launch.json) |
+| docker-mongodb-compose.yml | (file monitor required) deploy mongo db container | [download](https://raw.githubusercontent.com/theeye-io/recipes/master/linux_recipes/docker-mongo-compose.yml)
