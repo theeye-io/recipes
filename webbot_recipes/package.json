@@ -1,0 +1,25 @@
+{
+  "name": "puppeteer-examples",
+  "version": "1.0.0",
+  "description": "",
+  "dependencies": {
+    "puppeteer": "^1.6.2"
+  },
+  "devDependencies": {
+    "eslint-plugin-mocha": "^4.11.0",
+    "file-system": "^2.2.2",
+    "jest": "^21.2.1",
+    "js-comments": "^0.5.4",
+    "lodash": "^4.17.13"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/checkly/puppeteer-examples.git"
+  },
+  "author": "Tim Nolet",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/checkly/puppeteer-examples/issues"
+  },
+  "homepage": "https://github.com/checkly/puppeteer-examples#readme"
+}
