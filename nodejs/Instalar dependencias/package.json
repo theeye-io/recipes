@@ -1,0 +1,18 @@
+{
+    "name": "dependencias",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "adm-zip": "^0.4.16",
+      "async-retry": "^1.3.1",
+      "aws-sdk": "^2.742.0",
+      "got": "^11.5.2",
+      "unrar-promise": "^2.0.1"
+    }
+  }
