@@ -10,7 +10,12 @@ export LANG=en_US.UTF-8
 export LANGUAGE=en_US:en  
 export LC_ALL=en_US.UTF-8 
 
-github_token="--- TOKEN HERE ---"
+github_token="-- YOUR TOKEN HERE --"
+github_user="-- Your user here --"
+#HAY QUE DEFINIR LAS VARIABLES "${REPO_NAME}" "${APP_PATH}" como globales, ejemplo:
+#REPO_NAME="nombre_repo" (sin theeye/) APP_PATH="/root" deploy.sh
+#Si hay un problema en la clonación y responde Usage: gh repo [OPTIONS] USER_REPO , es la versión de GH
+
 if echo $github_token | grep TOKEN;then  
   echo "Please set the \$github_token
         In order to accomplish this task you should create a personal token for a specific user (https://docs.github.com/es/github/authenticating-to-github/creating-a-personal-access-token) 
@@ -99,7 +104,7 @@ function githubSourcesDeploy {
   echo "app sources deploy"
   
   name="${1}"
-  repo="https://github.com/theeye-io/${name}.git"
+  repo="theeye-io/${name}"
   path="${2}"
   branch="${3:-master}"
 
@@ -108,7 +113,7 @@ function githubSourcesDeploy {
   echo "github.com:
     oauth_token: $github_token
     git_protocol: https
-    user: comafi-bots" > ~/.config/gh/hosts.yml
+    user: $github_user" > ~/.config/gh/hosts.yml
   
   echo "[credential \"https://github.com\"]
         helper = !gh auth git-credential" > ~/.gitconfig
@@ -121,7 +126,7 @@ function githubSourcesDeploy {
   
   if [[ ! -d "${path}/${name}" ]]
   then
-    echo "creating repo"
+    echo "creating repo ${repo}"
     gh repo clone ${repo} 
   fi
   
