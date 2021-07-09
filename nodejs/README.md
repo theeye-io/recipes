@@ -1,6 +1,3 @@
-List of folders containing the nodejs recipes
+# Recipes
 
-| Name | Description | Link |
-| ----- | ----- | ----- |
-| mailbot |deploy imap-simple - connect to imap server and dowload pdf attachments |  |
-| pdf-extract-text |deploy pdf-parse - extract text from pdf |  |
+The "Instalar Dependencias" folder contains all dependencies that are used in these recipes
